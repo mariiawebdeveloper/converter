@@ -1,0 +1,13 @@
+.group{
+    margin: 10px;
+}
+input{
+    width: 250px;
+    height: 20px;
+
+}
+select{
+    margin: 5px;
+    width: 60px;
+
+}

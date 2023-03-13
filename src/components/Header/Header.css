@@ -1,0 +1,11 @@
+.header{
+    background-color:  #66FCF1;
+
+
+}
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 25px;
+}

@@ -1,5 +1,5 @@
 import './App.css';
-import CurrencyInput from "./components/CurrencyInput";
+import CurrencyInput from "./components/Body/CurrencyInput";
 import {useState, useEffect} from "react";
 import axios from "axios";
 import Header from "./components/Header/Header";
@@ -11,11 +11,18 @@ function App() {
     const [currency1, setCurrency1] = useState('USD');
     const [currency2, setCurrency2] = useState('EUR');
     const [rates, setRates] = useState([]);
+    function getRates(data) {
+        let rates = {}
+        data.forEach((item) => rates[item.cc] = item.rate)
+        return rates
+    }
 
     useEffect(() => {
-        axios.get('https://api.apilayer.com/fixer/latest?base=USD&apikey=8El09v1tgPaDSKNR0TGCUrzqXBE6AdDI')
+        axios.get('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json')
             .then(response => {
-                setRates(response.data.rates);
+
+                setRates(getRates(response.data));
+                console.log("rates", rates)
             })
     }, []);
 

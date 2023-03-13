@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import './Header.css'
 class Header extends Component {
     constructor(props) {
         super(props);
@@ -41,11 +41,16 @@ class Header extends Component {
         } else if (!isLoaded) {
             return <p>Loading...</p>
         } else {
-            return (
-                <div>
+            return (  <div className={'header'}>
+                    <div> Дата оновлення: {this.state.items[0].exchangedate}</div>
+                <div className={'items'} >
+
                     {items.map(item => (
-                        <div key={item.r030}>{item.txt}{item.rate}</div>
+                        <>
+                        <div key={item.r030}> Співвідношення {item.txt} до гривні: {item.rate}</div>
+                        </>
                     ))}
+                </div>
                 </div>
             );
         }

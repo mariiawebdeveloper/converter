@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './Header.css'
+
 class Header extends Component {
     constructor(props) {
         super(props);
@@ -10,6 +11,7 @@ class Header extends Component {
 
         }
     }
+
 
 
     componentDidMount() {
@@ -35,6 +37,7 @@ class Header extends Component {
     }
 
     render() {
+
         const {error, isLoaded, items} = this.state
         if (error) {
             return <p>Error {error.message}</p>
@@ -42,12 +45,12 @@ class Header extends Component {
             return <p>Loading...</p>
         } else {
             return (  <div className={'header'}>
-                    <div> Дата оновлення: {this.state.items[0].exchangedate}</div>
+                    <div> Latest update: {this.state.items[0].exchangedate}</div>
                 <div className={'items'} >
 
                     {items.map(item => (
                         <>
-                        <div key={item.r030}> Співвідношення {item.txt} до гривні: {item.rate}</div>
+                        <div key={item.r030}> Ratio  {item.cc} to the UAH: {item.rate}</div>
                         </>
                     ))}
                 </div>

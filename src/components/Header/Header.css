@@ -1,11 +1,44 @@
-.header{
-    background-color:  #66FCF1;
+.header {
+    background-color: #272042;
+    color: white;
 
 
 }
-.items{
+
+.items {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     font-size: 25px;
+}
+
+.preheader {
+    background: linear-gradient(143.05deg, #F83D6A -47.32%, #937DEF 98.56%);
+}
+
+.location-preheader {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3px
+}
+
+.text-logo-location{
+    display: flex;
+    flex-direction: column;
+}
+.links {
+    text-decoration: none;
+    color: white;
+}
+
+.links:hover {
+    text-decoration: none;
+    color: lightgray;
 }

@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 
 
 class Preheader extends Component {
+
     render() {
         return (
             <div className={'preheader'}>
@@ -14,8 +15,8 @@ class Preheader extends Component {
                         <div className={'text-logo-location'}>
                         <div style={{fontSize: "25px", color: "white"}}>Modern currency converter</div>
                         <div style={{fontSize: "15px", color: "white"}}>Your money- your choice</div>
-                        </div>
                     </div>
+                </div>
 
 
                     <div><Link to={'/'} className={'links'}>HOME</Link></div>

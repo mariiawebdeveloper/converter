@@ -1,9 +1,10 @@
 import React from 'react';
 import {Route, Routes} from "react-router";
-import Header from "./components/Header/Header";
-import Preheader from "./components/Header/Preheader";
-import Body from "./components/MainPage/BodyConv";
-import About from "./components/AboutUs/About";
+import Header from "./components/header/Header";
+import Preheader from "./components/header/Preheader";
+import Body from "./components/mainPage/BodyConv";
+import About from "./components/aboutUs/About";
+
 
 
 function App() {

@@ -1,0 +1,41 @@
+h2{
+    font-size: 42px;
+    background: -webkit-linear-gradient(143.05deg, #F83D6A -47.32%, #937DEF 98.56%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+p{
+    color: white;
+}
+.text-location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+.description-location{
+    font-size: 15px;
+    width: 50%;
+}
+.flex-preMain {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background: url("../../img/for.jpg") fixed no-repeat ;
+    background-size: 100%;
+
+    height: 500px;
+    padding: 5px 5px 20px 5px;
+
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.text-about{
+    text-align: left;
+    font-size: 30px;
+}

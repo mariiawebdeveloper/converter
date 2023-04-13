@@ -1,0 +1,41 @@
+.slider-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 400px;
+}
+
+.slider-arrow {
+    transform: translateY(-50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Playfair Display', cursive;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 43px;
+    /* identical to box height */
+
+
+    color: #B40000;
+}
+
+
+.slider-image-container {
+    width: 50%;
+    height: 400px;
+}
+
+.slider-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-image:hover {
+    transform: scale(1.1);
+}

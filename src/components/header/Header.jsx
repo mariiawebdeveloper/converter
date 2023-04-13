@@ -1,28 +1,26 @@
-import React from "react";
-import useCurrencyExchange from "../customHooks/useCurrencyExchange";
+import React, {Component} from 'react';
+import './Header.css'
+import {Link} from "react-router-dom";
 
 
-function CurrencyExchange() {
-    const { error, isLoaded, items } = useCurrencyExchange();
+class Header extends Component {
 
-    if (error) {
-        return <div>Error: {error.message}</div>;
-    } else if (!isLoaded) {
-        return <div>Loading...</div>;
-    } else {
-        return (  <div className={'header'}>
-                <div> Latest update: {items[0].exchangedate}</div>
-                <div className={'items'} >
+    render() {
+        return (<>
 
-                    {items.map(item => (
-                        <>
-                            <div key={item.r030}> Ratio  {item.cc} to the UAH: {item.rate}</div>
-                        </>
-                    ))}
-                </div>
+            <div className={'header-location'}>
+                <div className={'logo'}> <img width={200} height={120} src={'./image/Lantern.png'}/></div>
+                <div><Link to={'/'} className={'links'}>Home</Link></div>
+                <div><Link to={'/about'} className={'links'}>About us</Link></div>
+                <div><Link to={'/about'} className={'links'}>Our menu</Link></div>
+                <div><Link to={'/about'} className={'links'}>Pages</Link></div>
+                <div><Link to={'/about'} className={'links'}>Blog</Link></div>
+                <div><Link to={'/about'} className={'links'}>Contact us</Link></div>
             </div>
+            </>
+
         );
     }
 }
 
-export default CurrencyExchange;
+export default Header;

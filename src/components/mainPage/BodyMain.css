@@ -1,0 +1,101 @@
+p{
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+body{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.intro-location{
+    display: flex;
+    justify-content: space-around;
+}
+.image-intro-location{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.lines-location{
+
+}
+.info-block{
+    border-right: 2px #B40000 solid;
+    padding-right: 182px;
+}
+.info-location{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.photo-attachment{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 200px;
+    background-image: url("../../../public/image/fisheye.jpg");
+    background-attachment: fixed;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+
+}
+.offer{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 64px;
+    /* identical to box height */
+
+
+    color: #B40000;
+}
+.drinks{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 64px;
+    color: #000000;
+}
+.discount-text{
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 43px;
+
+    color: #000000;
+}
+.drinks-offer-location{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+.drinks-offer-photo{
+    padding: 20px;
+    border: #B40000 2px solid;
+}
+.discount-text-number{
+    font-family: 'Playfair Display', cursive;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 48px;
+    /* identical to box height */
+
+
+    color: #000000;
+
+    writing-mode: vertical-rl;
+}
+.block-offer-location{
+    display: flex;
+    gap: 10px;
+
+}
